@@ -358,10 +358,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hellephant
       objectReference: {fileID: 0}
-    - target: {fileID: 237743580, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 5420834620491236466, guid: 02271eb6c1da9a54290026ca8ac0f10b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -416,49 +412,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 237743584, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: m_Acceleration
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 237743584, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: avoidancePriority
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 237743582, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: startingHealth
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 237743582, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: scoreValue
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 237743582, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: sinkSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 237743581, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: attackDamage
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 237743581, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7214636919064736872, guid: 02271eb6c1da9a54290026ca8ac0f10b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599969931787371675, guid: 02271eb6c1da9a54290026ca8ac0f10b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7141582193241446199, guid: 02271eb6c1da9a54290026ca8ac0f10b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02271eb6c1da9a54290026ca8ac0f10b, type: 3}
