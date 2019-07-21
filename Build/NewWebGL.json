@@ -1,0 +1,12 @@
+{
+"companyName": "Hemanth",
+"productName": "Survival Shooter",
+"dataUrl": "NewWebGL.data.unityweb",
+"wasmCodeUrl": "NewWebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "NewWebGL.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
