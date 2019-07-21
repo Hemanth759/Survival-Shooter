@@ -59,7 +59,6 @@ public class EnemyHealth : MonoBehaviour {
 
     enemyAudio.clip = deathClip;
     enemyAudio.Play ();
-    StartSinking();
   }
 
 
