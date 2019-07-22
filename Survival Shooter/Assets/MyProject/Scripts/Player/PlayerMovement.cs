@@ -56,6 +56,8 @@ public class PlayerMovement : MonoBehaviour {
   void turning() {
     Vector3 newdirection = new Vector3(aimJoystick.Direction.x, 0f, aimJoystick.Direction.y);
     newdirection = newdirection.normalized;
+    if(newdirection.magnitude == 0)
+      return;
     Quaternion newRotation = Quaternion.LookRotation(newdirection);
     playerRigidbody.MoveRotation(newRotation);
   }
