@@ -4,6 +4,10 @@ public class PlayerMovement : MonoBehaviour {
   // public variables
   public float speed = 6f;
 
+  public Joystick movementJoystick;
+
+  public Joystick aimJoystick;
+
   // private varialbles
   private Vector3 movement;
   private Animator animator;
@@ -27,8 +31,8 @@ public class PlayerMovement : MonoBehaviour {
   /// </summary>
   void FixedUpdate()
   {
-    float h = Input.GetAxisRaw("Horizontal");
-    float v = Input.GetAxisRaw("Vertical");
+    float h = movementJoystick.Horizontal != 0f ? movementJoystick.Horizontal > 0 ? 1 : -1 : 0;
+    float v = movementJoystick.Vertical  != 0f ? movementJoystick.Vertical > 0 ? 1 : -1 : 0;
 
     // funtion to turn the player
     turning();
@@ -50,16 +54,10 @@ public class PlayerMovement : MonoBehaviour {
   }
 
   void turning() {
-    Ray camRay = cam.ScreenPointToRay(Input.mousePosition);
-    RaycastHit floorHit;
-
-    if(Physics.Raycast(camRay, out floorHit, camRayLength, floorMask)) {
-      Vector3 mouseToPlayer = floorHit.point - transform.position;
-      mouseToPlayer.y = 0f;
-
-      Quaternion newRotation = Quaternion.LookRotation(mouseToPlayer);
-      playerRigidbody.MoveRotation(newRotation);
-    }
+    Vector3 newdirection = new Vector3(aimJoystick.Direction.x, 0f, aimJoystick.Direction.y);
+    newdirection = newdirection.normalized;
+    Quaternion newRotation = Quaternion.LookRotation(newdirection);
+    playerRigidbody.MoveRotation(newRotation);
   }
 
   void animating(float horizontal, float vertical) {

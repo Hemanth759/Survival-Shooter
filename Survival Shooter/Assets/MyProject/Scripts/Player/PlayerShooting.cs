@@ -6,6 +6,7 @@ public class PlayerShooting : MonoBehaviour
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
 
+    public Joystick aimJoystick;
 
     float timer;
     Ray shootRay = new Ray();
@@ -32,7 +33,7 @@ public class PlayerShooting : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+		if((aimJoystick.Horizontal != 0f || aimJoystick.Vertical != 0f) && timer >= timeBetweenBullets && Time.timeScale != 0)
         {
             Shoot ();
         }
