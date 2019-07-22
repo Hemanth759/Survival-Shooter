@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour {
   private Animator animator;
   private Rigidbody playerRigidbody;
   private int floorMask;
-  private float camRayLength = 100f;
   private Camera cam;
 
   /// <summary>
