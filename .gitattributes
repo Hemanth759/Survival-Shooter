@@ -8,7 +8,7 @@
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.tif filter=lfs diff=lfs merge=lfs -text
+
 *.unity binary
 *.prefab binary
 *.asset binary
-*.unityweb filter=lfs diff=lfs merge=lfs -text
